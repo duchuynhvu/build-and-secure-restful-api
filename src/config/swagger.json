@@ -1,4 +1,5 @@
 {
+    "swagger": "2.0",
     "title": "Music API Documentation",
     "description": "MUSIC API course for egghead",
     "license": {
@@ -22,5 +23,28 @@
     ],
     "produces": [
         "application/json"
-    ]
+    ],
+    "definitions": {
+        "Song": {
+            "required": [
+                "title",
+                "url"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "rating": {
+                    "type": "integer",
+                    "format": "Int32"
+                }
+            }
+        }
+    }
 }
