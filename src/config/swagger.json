@@ -59,7 +59,7 @@
                 "tags": [
                     "Songs"
                 ],
-                "summary": "API Endpoint for find all Song",
+                "summary": "API Endpoint to find all Song",
                 "description": "Find all Songs from the database",
                 "parameters": [
                     {
@@ -83,6 +83,35 @@
                         "description": "All the songs",
                         "schema": {
                             "$ref": "#definitions/Songs"
+                        }
+                    }
+                }
+            }
+        },
+        "/songs/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": "true",
+                    "description": "id of the song",
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "Songs"
+                ],
+                "summary": "API Endpoint to find single Song",
+                "description": "Find one from the database",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Song has found",
+                        "schema": {
+                            "$ref": "#definitions/Song"
                         }
                     }
                 }
@@ -115,7 +144,9 @@
             "properties": {
                 "docs": {
                     "type": "array",
-                    "$ref": "#definitions/Song"
+                    "items": {
+                        "$ref": "#definitions/Song"
+                    }
                 },
                 "total": {
                     "type": "integer"
