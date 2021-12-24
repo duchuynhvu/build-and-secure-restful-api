@@ -20,5 +20,27 @@ export default {
             console.error(err);
             return res.status(500).send(err);
         }
-    }
+    },
+    async login(req, res) {
+        try {
+            const { value, error } = userService.validateLogin(req.body);
+            if (error) {
+                return res.status(400).json(error);
+            }
+            const user = await User.findOne({
+                email: value.email
+            })
+            if (!user) {
+                return res.status(401).json({ err: 'unauthorized' });
+            }
+            const authenticted = userService.comparePassword(value.password, user.password);
+            if (!authenticted) {
+                return res.status(401).json({ err: 'unauthorized' });
+            }
+            return res.json(user);
+        } catch (err) {
+            console.error(err);
+            return res.status(500).send(err);
+        }
+    },
 }
