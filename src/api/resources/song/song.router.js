@@ -1,13 +1,14 @@
 import express from 'express';
 import songController from './song.controller';
+import passport from 'passport';
 
 export const songRouter = express.Router();
 songRouter
     .route('/')
-    .post(songController.create)
-    .get(songController.findAll);
+    .post(passport.authenticate('jwt', { session: false }), songController.create)
+    .get(passport.authenticate('jwt', { session: false }), songController.findAll);
 
 songRouter.route('/:id')
-    .get(songController.findOne)
-    .delete(songController.delete)
-    .put(songController.update);
+    .get(passport.authenticate('jwt', { session: false }), songController.findOne)
+    .delete(passport.authenticate('jwt', { session: false }), songController.delete)
+    .put(passport.authenticate('jwt', { session: false }), songController.update);
