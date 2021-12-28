@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon src/app.js --exec babel-node --presets env",
     "build": "babel src -d dist --source-maps inline --copy-files",
-    "heroku-postbuild": "npm install", //called automatically when application is build on Heroku server
-    "start": "babel-node src/app.js"   //for running on the Heroku server - called in the Procfile
+    "heroku-postbuild": "npm install",
+    "start": "babel-node src/app.js"
   },
   "keywords": [],
   "author": "",
