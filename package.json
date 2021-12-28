@@ -27,8 +27,6 @@
     "swagger-ui-express": "^4.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.5",
     "@types/passport-jwt": "^3.0.6",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
