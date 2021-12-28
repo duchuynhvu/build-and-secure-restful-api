@@ -6,7 +6,7 @@ const config = {
     },
     development: {
         secret: 'I_AME_GERER',
-        MONGO_URI: 'mongodb://localhost/music_api',
+        MONGO_URI: 'mongodb://localhost/umt-tuyensinh-db',
         port: 3000
     }
 };
