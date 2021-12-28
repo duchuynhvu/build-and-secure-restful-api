@@ -1,7 +1,7 @@
 {
-  "name": "music-api",
+  "name": "umt-tuyensinh-apis",
   "version": "1.0.0",
-  "description": "A Music Restful API for Egghead Course: Secure Restful API with Nodejs, and Mongoose",
+  "description": "An UMT-TUYENSINH Restful API for Egghead Course: Secure Restful API with Nodejs, and Mongoose",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js --exec babel-node --presets env",
