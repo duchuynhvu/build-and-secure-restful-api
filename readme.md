@@ -1,45 +1,53 @@
-# Basic Commands
+# Music apis
 
-## Install Dependencies
+Music apis is a sample for build and secure resful api
+
+### Basic Commands
+
+**Install Dependencies**
 
 ```shell
 npm install
 ```
 
-## Start MongoDB
+**Start MongoDB**
 
 ```shell
 mongod
 ```
 
-## Run Application
+**Run Application**
+
+Start server
 
 ```shell
 npm start
 ```
 
-Remote: https://music-apis.herokuapp.com/
+Start client
 
-localhost: http://localhost:3000/
+Heroku: https://music-apis.herokuapp.com/
 
-# Database
+Local: http://localhost:3000/
+
+### Database
 
 Create account and databse at https://cloud.mongodb.com/
 
-# Deploy
+### Deploy
 
-## Heroku
+**Heroku**
 
 Create account and deploy app at https://dashboard.heroku.com/
 
-# Features
+### Features
 
-## Role and Authentication
+**Role and Authentication**
 
 1. authenticated user can view all the songs
 2. an artist can create, update, and delete song
 
-## Playlist
+**Playlist**
 
 1. A Standard user can create playlist
 2. Each playlist can have multiple songs
