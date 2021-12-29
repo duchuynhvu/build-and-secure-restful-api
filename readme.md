@@ -34,6 +34,8 @@ Local: http://localhost:3000/
 
 Create account and databse at https://cloud.mongodb.com/
 
+Connection: mongodb+srv://root:p3ssw0rd@cluster0.gz2mw.mongodb.net/music-db?retryWrites=true&w=majority
+
 ### Deploy
 
 **Heroku**
