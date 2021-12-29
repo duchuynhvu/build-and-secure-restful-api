@@ -1,13 +1,13 @@
 {
     "swagger": "2.0",
-    "title": "UMT-TUYENSINH API Documentation",
-    "description": "UMT-TUYENSINH API course for egghead",
+    "title": "MUSIC API Documentation",
+    "description": "MUSIC API course for egghead",
     "license": {
         "name": "MIT",
         "url": "https://opensource.org/licenses/MIT"
     },
     "version": "1.0.0",
-    "host": "umt-tuyensinh-apis.herokuapp.com",
+    "host": "music-apis.herokuapp.com",
     "basePath": "/api",
     "tags": [
         {
